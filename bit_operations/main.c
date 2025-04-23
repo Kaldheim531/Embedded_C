@@ -33,10 +33,10 @@ int main() {
   counting_units(number);
   puts("");
 
-  int thirdByte;
+  int third_byte;
   printf("input third byte: ");
-  scanf("%d", &thirdByte);
-  swap_third_byte(number, thirdByte);
+  scanf("%d", &third_byte);
+  swap_third_byte(number, third_byte);
   puts("");
 
   int negative;
