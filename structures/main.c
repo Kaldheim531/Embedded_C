@@ -11,18 +11,17 @@ int main(){
     struct abonent arr[100];
     int a;
     printf("1) Добавить абонента\n2) Удалить абонента\n3) Поиск абонентов по имени\n4) Вывод всех записей\n5) Выход\n");
-    printf("\nВыберите действие ");
-    scanf("%d",&a);
     char flag =1;
     int len=0;
     char name [10];
     char second_name[10];
     char tel[10];
-    while(flag){
-        switch (a)
-        {
+    while(flag) {
+        printf("\nВыберите действие ");
+        scanf("%d",&a);
+        putchar('\n');
+        switch (a) {
         case 1:
-        
         
         printf("\nИмя ");
         scanf("%s",name);
@@ -49,9 +48,7 @@ int main(){
             printf("Больше 100 записей\n");
         }
         len++;
-        printf("\nВыберите действие ");
-        scanf("%d",&a);
-        putchar('\n');
+        
             break;
     
         case 2:
@@ -66,9 +63,7 @@ int main(){
                     strcpy(arr[i].tel, "0");
             }
             }
-            printf("\nВыберите действие ");
-            scanf("%d",&a);
-            putchar('\n');
+            
             break;        
     
         case 3:
@@ -81,9 +76,7 @@ int main(){
                 printf("Second name: %s\n",arr[i].second_name);
                 printf("Number: %s\n",arr[i].tel);}
             }
-            printf("\nВыберите действие ");
-            scanf("%d",&a);
-            putchar('\n');
+           
             break;          
         case 4:
             for(int i=0;i<len;i++){
@@ -91,9 +84,7 @@ int main(){
                 printf("Second name: %s\n",arr[i].second_name);
                 printf("Number: %s\n",arr[i].tel);
             }
-            printf("\nВыберите действие ");
-            scanf("%d",&a);
-            putchar('\n');
+           
             break;
     
         case 5:
