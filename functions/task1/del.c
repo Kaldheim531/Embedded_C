@@ -1,7 +1,8 @@
 #include "func.h"
 void del(int *len, struct abonent *arr, char *name) {
-  printf("\nИмя: ");
-  scanf("%s",name);
+  printf("Имя: ");
+	scanf("%10s", name); 
+	
   for(int i = 0;i < *len; i++){
     if (strcmp(arr[i].name, name) == 0) {
       strcpy(arr[i].name, "0");

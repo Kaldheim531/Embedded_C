@@ -1,8 +1,9 @@
 #include "func.h"
 void seek(int *len, struct abonent *arr, char *name) {
-	printf("Имя ");
-	scanf("%s",name);
+	printf("Имя: ");
+	scanf("%10s", name); 
 	putchar('\n');
+	
 	for(int i = 0;i < *len; i++){
 		if (strcmp(arr[i].name, name) == 0) {
 			printf("Имя: %s\n", arr[i].name);

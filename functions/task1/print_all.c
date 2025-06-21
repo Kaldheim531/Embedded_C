@@ -6,5 +6,4 @@ void print_all(int *len, struct abonent *arr, char *name) {
 		printf("Номер: %s\n", arr[i].tel);
 		putchar('\n');
 	}      
-	
 }
