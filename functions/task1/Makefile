@@ -1,5 +1,5 @@
 BIN := main
-SRC := print_all.c add.c del.c seek.c  main.c
+SRC := print_all.c add.c del.c seek.c exit.c main.c
 OBJ := $(SRC:.c=.o)
 HDR := func.h
 CC := gcc
