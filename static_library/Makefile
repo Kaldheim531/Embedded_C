@@ -11,7 +11,7 @@ LDFLAGS :=
 all: libcalc.a $(BIN)
 
 libcalc.a: $(OBJ)
-	ar rcs $@ $^
+		ar rcs $@ $^
 
 $(BIN): main.c libcalc.a
 	$(CC) $(CFLAGS) $< -o $@ -L. -lcalc
@@ -21,4 +21,3 @@ $(BIN): main.c libcalc.a
 
 clean:
 	rm -rf $(BIN) *.o *.a
-

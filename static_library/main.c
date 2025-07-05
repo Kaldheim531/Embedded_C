@@ -4,17 +4,17 @@ int main(){
 
 	puts("1) Сложение\n2) Вычитание\n3) Умножение\n4) Деление\n5) Выход\n");
 	
-	int flag=1;
+	char flag=1;
 	int a,b;
 	
 	while(flag==1 || flag==2 || flag==3 || flag==4 || flag==5 ){
 		putchar('\n');
 		fputs("введите номер операции: ",stdout);
 	
-		scanf("%d",&flag);
+		scanf("%hhd",&flag);
 		putchar('\n');
 		switch(flag){
-			case 1:{
+			case ADD:{
 				fputs("Введите 1-oe число: ",stdout);
 				scanf("%d",&a);
 				putchar('\n');
@@ -24,7 +24,7 @@ int main(){
 				printf("Результат: %d\n",add(a,b));
 				break;
 			}
-			case 2:{
+			case SUB:{
 				fputs("Введите 1-oe число: ",stdout);
 				scanf("%d",&a);
 				putchar('\n');
@@ -34,7 +34,7 @@ int main(){
 				printf("Результат: %d\n",sub(a,b));
 				break;
 			}
-			case 3:{
+			case MUL:{
 				fputs("Введите 1-oe число: ",stdout);
 				scanf("%d",&a);
 				putchar('\n');
@@ -44,7 +44,7 @@ int main(){
 				printf("Результат: %d\n",mul(a,b));
 				break;
 			}
-			case 4:{
+			case DIV:{
 				fputs("Введите 1-oe число: ",stdout);
 				scanf("%d",&a);
 				putchar('\n');
