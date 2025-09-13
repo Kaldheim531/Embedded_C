@@ -1,0 +1,10 @@
+{
+	"files.associations": {
+		"functions.h": "c",
+		"wait.h": "c",
+		"unistd.h": "c",
+		"string.h": "c",
+		"stdio.h": "c",
+		"types.h": "c"
+	}
+}
